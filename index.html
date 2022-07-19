@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/mediaQuery.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="d-flex">
+      <div class="logo">
+        <img src="src/images/logo.png" alt="" />
+      </div>
+      <nav>
+        <ul class="header-menu" id="menu">
+          <li class="header-menu-item">Home</li>
+          <li class="header-menu-item">About</li>
+          <li class="header-menu-item">Destination</li>
+          <li class="header-menu-item">Pages</li>
+          <li class="header-menu-item">Blog</li>
+          <li class="header-menu-item">Contact</li>
+        </ul>
+      </nav>
+      <div>
+        <div class="search-icon d-flex">
+          <a href="#"><i class="fa fa-search"></i></a>
+        </div>
+        <div class="drop-down-menu d-flex">
+          <button class="burger-menu" onclick="showMenu()">
+            <a href="#"><i class="fa fa-bars"></i></a>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main></main>
+    <footer></footer>
+    <script>
+      function showMenu() {
+        let menu = document.getElementById("menu");
+        if (menu.className === "header-menu") {
+          menu.className += " show";
+        } else {
+          menu.className = "header-menu";
+        }
+      }
+    </script>
+  </body>
+</html>
