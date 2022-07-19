@@ -9,6 +9,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Rubik:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
     <link rel="stylesheet" href="src/mediaQuery.css" />
     <title>Document</title>
@@ -20,12 +26,12 @@
       </div>
       <nav>
         <ul class="header-menu" id="menu">
-          <li class="header-menu-item">Home</li>
-          <li class="header-menu-item">About</li>
-          <li class="header-menu-item">Destination</li>
-          <li class="header-menu-item">Pages</li>
-          <li class="header-menu-item">Blog</li>
-          <li class="header-menu-item">Contact</li>
+          <li class="header-menu-item"><a href="#">Home</a></li>
+          <li class="header-menu-item"><a href="#">About</a></li>
+          <li class="header-menu-item"><a href="#">Destination</a></li>
+          <li class="header-menu-item"><a href="#">Pages</a></li>
+          <li class="header-menu-item"><a href="#">Blog</a></li>
+          <li class="header-menu-item"><a href="#">Contact</a></li>
         </ul>
       </nav>
       <div>
@@ -39,7 +45,24 @@
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <section class="slider">
+        <div class="slider-content d-flex">
+          <h1>Australia</h1>
+          <p>Pixel perfect design with awesome contents</p>
+          <a href="#" class="slider-btn">Explore Now</a>
+        </div>
+      </section>
+      <section class="search-bar d-flex">
+        <h3>Where you want to go?</h3>
+        <form action="" class="search-form d-flex">
+          <input type="text" placeholder="Where to go" />
+          <input type="text" placeholder="Where to go" />
+          <input type="text" placeholder="Where to go" />
+          <button class="search-btn" type="submit">Search</button>
+        </form>
+      </section>
+    </main>
     <footer></footer>
     <script>
       function showMenu() {
