@@ -7,7 +7,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
 }
-
+img{
+  width: 100%;
+  height: auto;
+}
 a {
   text-decoration: none;
   transition: all 0.2s;
@@ -282,7 +285,7 @@ nav li {
 .newsletter-text p {
   font-size: 12px;
   font-weight: 400;
-  color: #AAB1B7;
+  color: #aab1b7;
 }
 .mail-form {
   display: flex;
@@ -301,7 +304,7 @@ nav li {
   padding-left: 15px;
   outline: 0;
 }
-.newsletter-btn{
+.newsletter-btn {
   background-color: #ff4a52;
   color: #fff;
   border: none;
@@ -310,4 +313,90 @@ nav li {
   text-align: center;
   cursor: pointer;
   padding: 16px 10px;
+}
+.video {
+  background-image: url(./images/video.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  padding: 130px 0;
+  margin: 15px 0;
+  position: relative;
+}
+.video:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #040e27;
+  content: "";
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  z-index: 1;
+}
+.video-container {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 100;
+}
+.video-container h3 {
+  font-family: "Nothing You Could Do", cursive;
+  font-weight: 400;
+  font-size: 7vw;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.video-btn {
+  width: 85px;
+  height: 85px;
+  background: #1ec6b6;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.video-btn:hover {
+  background: #ff4a52;
+}
+.video-btn a {
+  color: #fff;
+}
+footer {
+  background-color: #040e27;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+}
+.left-footer {
+  margin-bottom: 20px;
+}
+.left-footer li {
+  color: #aab1b7;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 400;
+}
+.footer-title {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+}
+
+
+.links li {
+  float: left;
+  width: 50%;
+  font-size: 14px;
+  line-height: 35px;
+}
+.links li a {
+  color: #aab1b7;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
 }

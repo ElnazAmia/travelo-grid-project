@@ -55,6 +55,10 @@
   .drop-down-menu {
     display: none !important;
   }
+  footer {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
@@ -69,21 +73,20 @@
   .popular-container {
     padding: 0 250px;
   }
-  .newsletter-container{
+  .newsletter-container {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    
   }
-  .newsletter-text{
+  .newsletter-text {
     margin-top: 0;
     margin-right: 8px;
   }
-  .mail-form{
+  .mail-form {
     flex-direction: row;
     align-items: center;
   }
-  .mail-form input{
-margin-right: 5px;
+  .mail-form input {
+    margin-right: 5px;
   }
 }
