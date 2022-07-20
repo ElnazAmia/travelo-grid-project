@@ -69,4 +69,21 @@
   .popular-container {
     padding: 0 250px;
   }
+  .newsletter-container{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .newsletter-text{
+    margin-top: 0;
+    margin-right: 8px;
+  }
+  .mail-form{
+    flex-direction: row;
+    align-items: center;
+  }
+  .mail-form input{
+margin-right: 5px;
+  }
 }
